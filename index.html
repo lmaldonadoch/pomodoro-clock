@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro clock</title>
+  <meta charset="UTF-8"/>
+  <script src="https://kit.fontawesome.com/9160ab1d1d.js" crossorigin="anonymous"></script>
+  <link rel = 'stylesheet' href = 'stylesheet.css'>
+  <script type="text/javascript" src="code.js" async></script>
+</head>
+<body>
+    <div id = 'pomodoro' class = 'container'>
+        <h1>Pomodoro Clock</h1>
+        <div id = 'setTimes' class = 'container'>
+            <div class = 'row'>
+                <div class = 'sessionText'>
+                    <h3>Session</h3>
+                </div>
+                <div class = 'sessionBreak'>
+                    <h3>Break</h3>
+                </div>
+            </div>
+            
+            <div class = 'row'>
+                <div class = 'decPom' id = 'decreasePom'>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div>
+                    <span id = 'sessionTime'>25</span>
+                </div>
+                <div class = 'incPom' id = 'increasePom'>
+                    <i class="fas fa-chevron-up fa-1x"></i>
+                </div>
+
+                <div class = 'decBrk' id = 'decreaseBreak'>
+                    <i class="fas fa-chevron-down fa-1x"></i>
+                </div>
+                <div>
+                    <span id = 'breakTime'>5</span>
+                </div>
+                <div class = 'incBrk' id = 'increaseBreak'>
+                    <i class="fas fa-chevron-up fa-1x"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id = 'playPomodoro' class = 'container'>
+            <div class = 'row'>
+                <div class = 'col-xs-6'>
+                    <div id = 'start' class = 'btn-btn-clock' data-toggle = 'tooltip' title = 'start clock'>
+                        <i class = 'fa fa-play fa-3x'></i>
+                    </div>
+                </div>
+                <div class = 'col-xs-6'>
+                    <div id = 'refresh' class = 'btn-btn-clock' data-toggle = 'tooltip' title = 'Stop Clock and Reset Session and Break to 25 and 5'>
+                        <i class = 'fa fa-refresh fa-3x'></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'row'>
+                <div class = 'col-xs-12 text-center'>
+                    <h2 id = 'activity'>Session</h2>
+                </div>
+            </div>
+
+            <div class = 'row'>
+                <div id = 'testClock' class = 'col-xs-12 text-center'>
+                    25:00
+                </div>
+            </div>
+
+            <div class = 'row'>
+                <div class = 'col-xs-6'>
+                    <div id = 'pause' class = 'btn-btn-clock' data-toggle="tooltip" title="Pause Clock">
+                        <i class = 'fa fa-pause fa-3x'></i>
+                    </div>
+                </div>
+                <div class = 'col-xs-6'>
+                    <div id = 'stop' class = 'btn-btn-clock' data-toggle="tooltip" title="Stop Clock">
+                        <i class = 'fa fa-stop fa-3x'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Your JavaScript goes here!
+  </script>
+</body>
+</html>
